@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Equipo de Fútbol</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Equipo de Fútbol</h1>
+    <nav>
+      <ul>
+        <li><a href="#partidos">Partidos</a></li>
+        <li><a href="#partidos-en-directo">Partidos en Directo</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#opiniones">Opiniones de los Aficionados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="partidos">
+    <h2>Partidos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Equipo Local</th>
+          <th>Equipo Visitante</th>
+          <th>Resultado</th>
+        </tr>
+      </thead>
+      <tbody id="partidos-body"></tbody>
+    </table>
+  </section>
+
+  <section id="partidos-en-directo">
+    <h2>Partidos en Directo</h2>
+    <div id="partidos-en-directo-container"></div>
+  </section>
+
+  <section id="noticias">
+    <h2>Noticias</h2>
+    <div id="noticias-container"></div>
+  </section>
+
+  <section id="opiniones">
+    <h2>Opiniones de los Aficionados</h2>
+    <form id="opiniones-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="comentario">Comentario:</label>
+      <textarea id="comentario" name="comentario" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="opiniones-container"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
